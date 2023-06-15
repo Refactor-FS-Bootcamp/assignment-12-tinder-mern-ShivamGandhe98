@@ -8,7 +8,7 @@ const TinderCards = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const req = await axios.get('http://localhost:8000/tinder/cards')
+            const req = await axios.get('https://tinderbackend-shivamgandhe2.b4a.run/tinder/cards')
             setPeople(req.data);
         }
         fetchData()
